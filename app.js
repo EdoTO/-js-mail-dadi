@@ -28,17 +28,16 @@ if( find === false ) {
 
 const Button = document.getElementById('buttonplay')
 const Message = document.getElementById("message")
-const playerScore = document.getElementById("playerscore")
-let score = 0;
+
 
 Button.addEventListener("click", function() {
 
     const player = Math.floor( Math.random () * 6 + 1);
     const computer = Math.floor( Math.random() * 6 + 1);
 
-    let message = "Parità"
-
     console.log( player , computer)
+
+    let message = "Parità"
 
     if ( player < computer ) {
         message = "Hai perso!!";
